@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    app:popUpToInclusive="true"
+    tools:context=".AddFragments.FragmentSignIn">
+
+    <ImageView
+        android:id="@+id/imageLogo"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_marginTop="100dp"
+
+        android:src="@mipmap/ic_launcher_foreground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/enterEmail"
+        style="@style/EnterField"
+        android:layout_marginTop="50dp"
+        android:hint="@string/enter_field_hint_email"
+
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageLogo" />
+
+
+    <EditText
+        android:id="@+id/enterPass"
+        style="@style/EnterField"
+        android:layout_marginTop="25dp"
+        android:hint="@string/enter_field_hint_pass"
+
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/enterEmail"
+        app:layout_constraintStart_toStartOf="@+id/enterEmail"
+        app:layout_constraintTop_toBottomOf="@+id/enterEmail" />
+
+    <CheckBox
+        android:id="@+id/checkRememberMe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+
+        android:fontFamily="@font/roboto"
+        android:layoutDirection="rtl"
+        android:text="@string/enter_check_remember_me"
+
+        android:textSize="@dimen/check_text"
+        app:layout_constraintStart_toStartOf="@id/enterPass"
+        app:layout_constraintTop_toBottomOf="@id/enterPass" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnEnter"
+        style="@style/ButtonDark"
+
+        android:layout_marginTop="76dp"
+        android:text="@string/enter_button_enter"
+
+        android:textSize="@dimen/button_size_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enterPass" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnReg"
+        style="@style/ButtonLight"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+
+        android:layout_marginTop="40dp"
+
+        android:text="@string/enter_button_register"
+        android:textSize="@dimen/button_size_text"
+        app:layout_constraintEnd_toEndOf="@+id/btnEnter"
+        app:layout_constraintStart_toStartOf="@+id/btnEnter"
+        app:layout_constraintTop_toBottomOf="@+id/btnEnter" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

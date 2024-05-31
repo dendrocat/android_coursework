@@ -1,0 +1,115 @@
+<resources>
+    <string name="app_name">Игрорай</string>
+    <string name="search_hint">Поиск…</string>
+    <string name="filters">Фильтры</string>
+
+    <string name="catalog_title">Категории</string>
+
+    <string name="example_product_title">Название товара</string>
+    <string name="example_product_price">2 449 ₽</string>
+    <string name="example_product_age">от 7 лет</string>
+
+    <string name="example_catalog_title">Конструкторы</string>
+    <string name="example_bucket_price">К оплате: 0 ₽</string>
+    <string name="example_profile_nikname">Иванов Иван</string>
+    <string name="example_filter_check">Категория/Бренд</string>
+    <string name="example_inform_nikname">Сундук Альбертович</string>
+    <string name="example_my_count">Выбрано: 0</string>
+    <string name="example_product_page_filters">Категория Бренд</string>
+    <string name="example_product_page_description">\t Конструктор включает в себя множество ярких и красочных деталей, которые помогут вам создать самые невероятные и уникальные модели. С его помощью вы сможете построить замки, волшебные леса, фантастические существа и многое другое.
+    \t Конструктор включает в себя множество ярких и красочных деталей, которые помогут вам создать самые невероятные и уникальные модели. С его помощью вы сможете построить замки, волшебные леса, фантастические существа и многое другое.</string>
+    <string name="example_product_page_rate">4.5</string>
+    <string name="example_product_page_feedbacks">Отзывов: 13</string>
+    <string name="example_feedback_text">LEGO Мир фантазий - это увлекательное приключение, которое погружает детей в мир магии и творчества. Многочисленные красочные кубики и фигурки вдохновляют на бесконечную игру, развивая воображение и навыки строительства. Инструкция понятная, сборка простая и увлекательная. Высококачественные материалы гарантируют прочность и долговечность конструктора. LEGO Мир фантазий - отличный подарок для юных строителей, который будет радовать их долгие часы.</string>
+
+
+    <string name="bucket_del_all_checked">Удалить выбранное</string>
+    <string name="bucket_checkbox_title">Выбрать всё</string>
+    <string name="bucket_button_pay">Оплатить</string>
+
+    <string name="setting_about_person">Информация о себе</string>
+    <string name="setting_my_products">Мои товары</string>
+    <string name="setting_add_product">Добавить товар</string>
+    <string name="setting_log_out">Выйти из профиля</string>
+    <string name="setting_del_profile">Удалить профиль</string>
+    <string name="setting_about_program">О программе</string>
+    <string name="setting_about_author">Об авторе</string>
+    <string name="setting_text_about_program">\t\tИнтернет-магазин игрушек Игрорай — это удобная и
+        функциональная платформа для онлайн-покупок, которая предлагает широкий ассортимент игрушек 
+        для детей разных возрастных групп. Программа обеспечивает безопасный и приятный опыт 
+        шопинга, предоставляя подробные описания продуктов, фотографии высокого качества и 
+        отзывы покупателей.
+        \n\t\t"Игрорай" стремится предоставить радостный и образовательный опыт для детей, а также
+        удобство и надежность для родителей.</string>
+
+    <string name="filter_title">Фильтры</string>
+
+    <string name="filter_price_title">Цена</string>
+    <string name="filter_price_hint_min">100 ₽</string>
+    <string name="filter_price_hint_max">10 000 ₽</string>
+    <string name="filter_age_title">Мин. возраст: </string>
+
+    <string name="filter_category_title">Категории</string>
+    <string name="filter_brand_title">Бренды</string>
+
+    <string name="button_apply">Применить</string>
+
+    <string name="enter_field_hint_email">Введите адрес электронной почты</string>
+    <string name="enter_field_hint_pass">Введите пароль</string>
+    <string name="enter_field_hint_repeat_pass">Повторите пароль</string>
+    <string name="enter_field_hint_nikname">Введите имя</string>
+    <string name="enter_check_remember_me">Запомнить меня</string>
+    <string name="enter_check_seller">Вы продавец?</string>
+    <string name="enter_button_enter">Войти</string>
+    <string name="enter_button_register">Создать аккаунт</string>
+
+    <string name="register_back">Назад</string>
+
+    <string name="inform_btn_save">Сохранить</string>
+
+    <string name="my_btn_add">Добавить товар</string>
+
+    <string name="product_page_btn_feedback">Оценить товар</string>
+    <string name="product_page_btn_add_bucket">В корзину</string>
+    <string name="product_page_btn_in_bucket">В корзине</string>
+
+    <string name="product_info_add_product">Добавить</string>
+    <string name="product_info_save_product">Сохранить</string>
+    <string name="product_info_hint_desc">Введите описание товара…</string>
+    <string name="product_info_btn_add_image">Добавить изображение</string>
+    <string name="product_info_title_name">Название товара:</string>
+    <string name="product_info_title_price">Цена (в руб.):</string>
+    <string name="product_info_title_category">Категория:</string>
+    <string name="product_info_title_brand">Бренд:</string>
+    <string name="product_info_min_age">Мин. возраст:</string>
+    <string name="product_info_loading_error">"Ранее добавленный товар загружается. Подождите немного"</string>
+
+    <string name="dialog_do_image">Сделать фотографию</string>
+    <string name="dialog_choose_image">Выбрать изображение</string>
+
+    <string name="feedback_add_rate">Оцените товар:</string>
+    <string name="feedback_start_rate">0.0</string>
+    <string name="feedback_hint_desc">Напишите свой отзыв…</string>
+
+    <string name="product_home_placeholder_empty">В данный момент товары отсутствуют на складе</string>
+    <string name="product_home_placeholder_empty_search">По данному запросу товаров не обнаружено</string>
+    <string name="bucket_placeholder_empty">В данный момент корзина пуста</string>
+    <string name="my_product_placeholder_empty">Вы ещё не добавили ни одного товара</string>
+    <string name="placeholder_loading">Пожалуйста, подождите…</string>
+
+    <string name="author_name">Смирнов Д.А.</string>
+    <string name="author_group">Группа: ИКБО–03–22</string>
+    <string name="author_year_dev">Год разработки: 2024</string>
+    <string name="author_email">Почта: dan.re0@mail.ru</string>
+    <string name="about_program">О программе</string>
+    <string name="about_author">Об авторе</string>
+    <string name="about_instruction">Инструкция пользователю</string>
+    <string name="instruction">\t\tГлавная: здесь представлен список товаров и основные варианты фильтрации. Также можно найти товар по названию, категории или бренду через поле поиска.
+\n\t\tСтраница товара: здесь представлена информация о товаре такая как: фотографии, цена, категория, бренд, минимальный допустимый возраст, описания, рейтинг и количество отзывов, а также список всех отзывов.
+\n\t\tФильтры: здесь представлен список всех возможных вариантов филь-трации по категориям или брендам. Также возможна фильтрация по мини-мальной и максимальной цене, а также по минимальному разрешенному возрасту. При нажатии на кнопку «Применить» список будет отфильтрован в соответствии с заданными параметрами.
+\n\t\tКаталог: здесь представлен список всех возможных вариантов филь-трации по категории. При нажатии на один из них список товаров будет отфильтрован по данной категории.
+\n\t\tКорзина товаров: здесь представлены добавленные пользователем в корзину товары. Можно отметить некоторые из них и удалить или оплатить выбранные.
+\n\t\tПрофиль: здесь представлены имя и фотография пользователя.
+\n\t\tМои товары: здесь представлен список добавленных пользователем товаров. При нажатии на кнопку «Добавить» товар будет выполнен пере-ход к форме добавления товара.</string>
+
+</resources>

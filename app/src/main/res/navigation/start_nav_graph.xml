@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/start_nav_graph"
+    app:startDestination="@id/fragmentSingIn">
+
+    <fragment
+        android:id="@+id/fragmentProduct"
+        android:name="com.example.app.AddFragments.FragmentProduct"
+        android:label="fragment_product"
+        tools:layout="@layout/fragment_product">
+        <action
+            android:id="@+id/action_fragmentProduct_to_fragmentFeedback"
+            app:destination="@id/fragmentFeedback"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/fragmentProduct" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentInformation"
+        android:name="com.example.app.AddFragments.FragmentInformation"
+        android:label="fragment_information"
+        tools:layout="@layout/fragment_information" />
+    <fragment
+        android:id="@+id/fragmentSingIn"
+        android:name="com.example.app.AddFragments.FragmentSignIn"
+        android:label="fragment_sing_in"
+        tools:layout="@layout/fragment_sign_in">
+        <action
+            android:id="@+id/action_fragmentSingIn_to_fragmentRegister"
+            app:destination="@id/fragmentRegister"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/fragmentSingIn" />
+        <action
+            android:id="@+id/action_fragmentSingIn_to_mainActivity"
+            app:destination="@id/mainActivity" />
+    </fragment>
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.app.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+    <fragment
+        android:id="@+id/fragmentRegister"
+        android:name="com.example.app.AddFragments.FragmentRegister"
+        android:label="FragmentRegister"
+        tools:layout="@layout/fragment_register">
+        <action
+            android:id="@+id/action_fragmentRegister_to_mainActivity"
+            app:destination="@id/mainActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentMyProducts"
+        android:name="com.example.app.AddFragments.FragmentMyProducts"
+        android:label="FragmentMyProducts"
+        tools:layout="@layout/fragment_my_products">
+        <action
+            android:id="@+id/action_fragmentMyProducts_to_fragmentProductInfo"
+            app:destination="@id/fragmentProductInfo"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/fragmentMyProducts" />
+        <action
+            android:id="@+id/action_fragmentMyProducts_to_fragmentProduct"
+            app:destination="@id/fragmentProduct"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/fragmentMyProducts" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentProductInfo"
+        android:name="com.example.app.AddFragments.FragmentProductInfo"
+        android:label="fragment_product_info"
+        tools:layout="@layout/fragment_product_info" />
+
+    <activity
+        android:id="@+id/addActivity"
+        android:name="com.example.app.AddActivity"
+        android:label="activity_add"
+        tools:layout="@layout/activity_add" />
+    <fragment
+        android:id="@+id/fragmentFeedback"
+        android:name="com.example.app.AddFragments.FragmentFeedback"
+        android:label="fragment_feedback"
+        tools:layout="@layout/fragment_feedback" />
+    <fragment
+        android:id="@+id/fragmentAboutProgram"
+        android:name="com.example.app.AddFragments.FragmentAboutProgram"
+        android:label="fragment_about_program"
+        tools:layout="@layout/fragment_about_program">
+        <action
+            android:id="@+id/action_fragmentAboutProgram_to_fragmentAboutAuthor"
+            app:destination="@id/fragmentAboutAuthor"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/fragmentAboutProgram" />
+        <action
+            android:id="@+id/action_fragmentAboutProgram_to_fragmentInstruction"
+            app:destination="@id/fragmentInstruction"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/fragmentAboutProgram" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentAboutAuthor"
+        android:name="com.example.app.AddFragments.FragmentAboutAuthor"
+        android:label="fragment_about_author"
+        tools:layout="@layout/fragment_about_author" />
+    <fragment
+        android:id="@+id/fragmentInstruction"
+        android:name="com.example.app.AddFragments.FragmentInstruction"
+        android:label="FragmentInstruction"
+        tools:layout="@layout/fragment_instruction" />
+
+</navigation>

@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".AddFragments.FragmentProductInfo">
+
+
+    <LinearLayout
+        android:id="@+id/containerBack"
+
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back_container"
+        android:clipToPadding="false"
+        android:elevation="@dimen/elevation"
+
+        android:paddingStart="20dp"
+        android:paddingTop="15dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="15dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:gravity="bottom"
+            android:orientation="horizontal"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back_arrow" />
+
+            <TextView
+                style="@style/BaseTextView"
+
+                android:text="@string/register_back"
+                android:textSize="@dimen/back_size_text" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/saveProduct"
+            style="@style/BaseTextView"
+
+            android:text="@string/product_info_add_product"
+            android:textColor="@color/text_blue"
+            android:textSize="@dimen/back_size_text" />
+
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+
+        android:clipToPadding="false"
+
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/containerBack">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:clipToPadding="false"
+
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp">
+
+                <TextView
+                    style="@style/BaseTextView"
+                    android:text="@string/product_info_title_name" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <EditText
+                    android:id="@+id/nameProduct"
+                    style="@style/BaseTextView"
+                    android:layout_width="@dimen/product_info_size_field"
+
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp">
+
+                <TextView
+                    style="@style/BaseTextView"
+                    android:text="@string/product_info_title_price" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <EditText
+                    android:id="@+id/priceProduct"
+                    style="@style/BaseTextView"
+                    android:layout_width="@dimen/product_info_size_field"
+
+                    android:inputType="numberDecimal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp">
+
+                <TextView
+                    style="@style/BaseTextView"
+                    android:text="@string/product_info_title_category" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <EditText
+                    android:id="@+id/categoryProduct"
+                    style="@style/BaseTextView"
+                    android:layout_width="@dimen/product_info_size_field"
+
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp">
+
+                <TextView
+                    style="@style/BaseTextView"
+                    android:text="@string/product_info_title_brand" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <EditText
+                    android:id="@+id/brandProduct"
+                    style="@style/BaseTextView"
+                    android:layout_width="@dimen/product_info_size_field"
+
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp">
+
+                <TextView
+                    style="@style/BaseTextView"
+                    android:text="@string/product_info_min_age" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <EditText
+                    android:id="@+id/ageProduct"
+                    style="@style/BaseTextView"
+                    android:layout_width="@dimen/product_info_size_field"
+
+                    android:inputType="numberDecimal" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/descProduct"
+                style="@style/BaseTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="15dp"
+                android:autofillHints=""
+                android:gravity="start|top"
+                android:hint="@string/product_info_hint_desc"
+
+                android:inputType="textMultiLine" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recView"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:clipToPadding="false"
+
+                tools:itemCount="4"
+                tools:listitem="@layout/item_image" />
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/addImage"
+        style="@style/ButtonLight"
+        android:layout_marginBottom="10dp"
+
+        android:text="@string/product_info_btn_add_image"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

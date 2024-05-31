@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".AddFragments.FragmentSignIn">
+
+    <LinearLayout
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+
+        android:layout_marginTop="20dp"
+        android:gravity="bottom"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_arrow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+
+            android:padding="0dp"
+            android:text="@string/register_back"
+            android:textSize="@dimen/back_size_text" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/enterName"
+        style="@style/EnterField"
+        android:layout_marginTop="40dp"
+        android:hint="@string/enter_field_hint_nikname"
+
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBack" />
+
+    <EditText
+        android:id="@+id/enterEmail"
+        style="@style/EnterField"
+        android:layout_marginTop="25dp"
+        android:hint="@string/enter_field_hint_email"
+
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/enterName" />
+
+
+    <EditText
+        android:id="@+id/enterPass"
+        style="@style/EnterField"
+        android:layout_marginTop="25dp"
+        android:hint="@string/enter_field_hint_pass"
+
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enterEmail" />
+
+    <EditText
+        android:id="@+id/repeatPass"
+        style="@style/EnterField"
+        android:layout_marginTop="25dp"
+        android:hint="@string/enter_field_hint_repeat_pass"
+
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enterPass" />
+
+    <CheckBox
+        android:id="@+id/checkSeller"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+
+        android:fontFamily="@font/roboto"
+        android:layoutDirection="rtl"
+        android:text="@string/enter_check_seller"
+
+        android:textSize="@dimen/check_text"
+        app:layout_constraintStart_toStartOf="@id/repeatPass"
+        app:layout_constraintTop_toBottomOf="@id/repeatPass" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnReg"
+        style="@style/ButtonDark"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+
+        android:layout_marginTop="70dp"
+        android:text="@string/enter_button_register"
+
+        android:textSize="@dimen/button_size_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/repeatPass" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="navbar_icons_size">35dp</dimen>
+    <dimen name="top_bar_corners">15dp</dimen>
+
+    <dimen name="item_product_top">5dp</dimen>
+    <dimen name="common_top">10dp</dimen>
+
+    <dimen name="product_title_size_text">20sp</dimen>
+    <dimen name="product_price_size_text">18sp</dimen>
+
+    <dimen name="common_size_text">20sp</dimen>
+    <dimen name="search_bar_text">22sp</dimen>
+    <dimen name="title_large_size_text">30sp</dimen>
+    <dimen name="title_small_size_text">20sp</dimen>
+
+    <dimen name="pay_size_text">22sp</dimen>
+
+    <dimen name="elevation">5dp</dimen>
+    <dimen name="card_corners">5dp</dimen>
+
+
+    <dimen name="button_size_text">24sp</dimen>
+
+    <dimen name="product_corners">10dp</dimen>
+
+    <dimen name="filter_check_size_text">16sp</dimen>
+
+    <dimen name="enter_field_size_text">17sp</dimen>
+
+    <dimen name="check_text">15sp</dimen>
+
+    <dimen name="back_size_text">20sp</dimen>
+
+    <dimen name="product_page_title_size_text">28sp</dimen>
+    <dimen name="product_page_other_size_text">24sp</dimen>
+    <dimen name="product_page_space">12dp</dimen>
+    <dimen name="product_page_desc_size_text">22sp</dimen>
+    <dimen name="product_page_size_button">35dp</dimen>
+    <dimen name="product_page_margin_button">15dp</dimen>
+
+    <dimen name="feedback_text_size_text">15sp</dimen>
+
+    <dimen name="product_info_size_field">205dp</dimen>
+
+    <dimen name="ava_placeholder_padding_top">10dp</dimen>
+    <dimen name="ava_placeholder_padding_lr">5dp</dimen>
+</resources>

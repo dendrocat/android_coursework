@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sortName">
+        <item>По рейтингу</item>
+        <item>От старых к новым</item>
+        <item>От новых к старым</item>
+    </string-array>
+</resources>
