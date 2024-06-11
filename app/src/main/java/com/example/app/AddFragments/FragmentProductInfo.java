@@ -168,6 +168,10 @@ public class FragmentProductInfo extends Fragment {
             showMessage("Минимальный возраст не может отсутствовать");
             return false;
         }
+        if (db.getImages().isEmpty()) {
+            showMessage("Добавьте хотя бы одну фотографию");
+            return false;
+        }
         return true;
     }
 
